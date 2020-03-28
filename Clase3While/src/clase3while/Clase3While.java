@@ -12,6 +12,9 @@ public class Clase3While {
         Scanner teclado = new Scanner(System.in);
         int contador = 3;
         while ( contador < 3 ) {  
+//            1 vez 
+//             nunca 
+//             n veces
             // LOOP INFINITO 
 //             cuerpo del while            
             //sentencias a ejecutar si la condicion es true
