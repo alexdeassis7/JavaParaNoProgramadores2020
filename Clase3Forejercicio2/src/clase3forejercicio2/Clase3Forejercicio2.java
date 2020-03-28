@@ -1,21 +1,23 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+/* 2 )Leer 10 números y obtener su cubo y su cuarta*/
 package clase3forejercicio2;
 
-/**
- *
- * @author Alex
- */
+import java.util.Scanner;
+
 public class Clase3Forejercicio2 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        //definimos las variables de trabajo 
+        int numeroIngresado = 0, cubo = 0, cuarta = 0;
+        Scanner teclado = new Scanner(System.in);
+
+        for (int i = 0; i < 10; i++) {            
+            System.out.println("ingrese el numero " + (i + 1));
+            numeroIngresado = teclado.nextInt();
+            cubo = numeroIngresado * numeroIngresado * numeroIngresado;
+            cuarta = cubo * numeroIngresado;
+            
+            System.out.println("Cubo de " + numeroIngresado + " = " + cubo);
+            System.out.println("Cuarta de " + numeroIngresado + " = " + cuarta);          
+        }
     }
-    
 }
